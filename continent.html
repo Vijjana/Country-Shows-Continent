@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>continent</title>
+    </head>
+    <body>
+        <h1>Select a Country</h1>
+        <select id = "country">
+            <option value = ""></option>
+            <option value = "India">India</option>
+            <option value = "Russia">Russia</option>
+            <option value = "Australia">Australia</option>
+            <option value = "USA">USA</option>
+            <option value = "France">France</option>
+        </select><br>
+        <button>Find Continent</button>
+    </body>
+</html>
+<script>
+    document.querySelector("button").addEventListener("click",get_continent);
+    function get_continent(){
+    let India = document.querySelector("#country").value;
+    let Russia = document.querySelector("#country").value;
+    let Australia = document.querySelector("#country").value;
+    let USA = document.querySelector("#country").value;
+    let France = document.querySelector("#country").value;
+    
+        if(India == "India"){
+            alert("The Continent is Asia")
+        }
+        if(Russia == "Russia"){
+            alert("The continent is Asia")
+        }
+        if(Australia == "Australia"){
+            alert("The continent is Oceania")
+        }
+        if(USA == "USA"){
+            alert("The continent is North America")
+        }
+        if(France == "France"){
+            alert("The continent is Eurpoe")
+        }
+    }
+    
+
+
+</script>
